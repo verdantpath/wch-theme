@@ -71,10 +71,14 @@ print $fertilizer_product_points;
 
 <?php
 // if( $grow_media_product_label_btn !== ""){
-if( $fertilizer_product_label_btn) {
+if( $fertilizer_product_label_btn && $fertilizer_label_2up) {
 	// print '<p>label_button set</p>';
-	print '<a class="x-btn x-btn-mini" href="' . $fertilizer_product_label_btn . '" data-options="thumbnail: \'\'">Download Label<i class="x-icon mvn mls mrn x-icon-caret-down" data-x-icon="" aria-hidden="true"></i></a>';
-} 
+	print '<a class="x-btn x-btn-mini" href="' . $fertilizer_product_label_btn . '" data-options="thumbnail: \'\'">Download Label A<i class="x-icon mvn mls mrn x-icon-caret-down" data-x-icon="" aria-hidden="true"></i></a>
+	<hr class="x-gap">';
+} elseif( $fertilizer_product_label_btn) {
+	print '<a class="x-btn x-btn-mini" href="' . $fertilizer_product_label_btn . '" data-options="thumbnail: \'\'">Download Label<i class="x-icon mvn mls mrn x-icon-caret-down" data-x-icon="" aria-hidden="true"></i></a>
+	<hr class="x-gap">';
+}
 // else {
 // 	print '<p>label_button NOT set</p>';
 // }
@@ -84,26 +88,30 @@ if( $fertilizer_product_label_btn) {
 <?php // print $fertilizer_product_label_btn; ?>
 <!-- " data-options="thumbnail: ''">Download Label<i class="x-icon mvn mls mrn x-icon-caret-down" data-x-icon="" aria-hidden="true"></i></a> -->
 
-<hr class="x-gap">
+
 
 <?php
 if( $fertilizer_product_label_b_btn) {
 	// print '<p>label_button_b set</p>';
-	print '<a class="x-btn x-btn-mini" href="' . $fertilizer_product_label_b_btn . '" data-options="thumbnail" \'\'">Download Label B<i class="x-icon mvn mls mrn x-icon-caret-down" data-x-icon="" aria-hidden="true"></i></a>';
+	print '<a class="x-btn x-btn-mini" href="' . $fertilizer_product_label_b_btn . '" data-options="thumbnail" \'\'">Download Label B<i class="x-icon mvn mls mrn x-icon-caret-down" data-x-icon="" aria-hidden="true"></i></a>
+	<hr class="x-gap">';
 } 
 // else {
 // 	print '<p>label_button_b NOT set</p>';
 // }
 ?>
 
-<hr class="x-gap">
+
 
 <?php
 // if( $grow_media_product_msds_btn !== "") {
-if($fertilizer_product_msds_btn) {
+if($fertilizer_product_msds_btn && $fertilizer_label_2up) {
+	// print '<p>msds_button set</p>';
+	print '<a class="x-btn x-btn-mini" href="' . $fertilizer_product_msds_btn . '" data-options="thumbnail: \'\'">Download MSDS A<i class="x-icon mvn mls mrn x-icon-caret-down" data-x-icon="" aria-hidden="true"></i></a>';
+} elseif($fertilizer_product_msds_btn) {
 	// print '<p>msds_button set</p>';
 	print '<a class="x-btn x-btn-mini" href="' . $fertilizer_product_msds_btn . '" data-options="thumbnail: \'\'">Download MSDS<i class="x-icon mvn mls mrn x-icon-caret-down" data-x-icon="" aria-hidden="true"></i></a>';
-} 
+}
 // else {
 // 	print '<p>msds_button NOT set</p>';
 // }

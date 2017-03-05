@@ -74,7 +74,8 @@ a:focus, select:focus, input[type="file"]:focus, input[type="radio"]:focus, inpu
   .product-grid .product-buttons {
     float: left; }
     .product-grid .product-buttons a {
-      display: block; }
+      display: block;
+      font-size: 14px; }
   @media (max-width: 480px) {
     .product-grid {
       min-width: 100%; } }
@@ -91,12 +92,19 @@ a:focus, select:focus, input[type="file"]:focus, input[type="radio"]:focus, inpu
 .x-topbar .p-info {
   color: #EBEBE3 !important;
   font-size: 16px; }
+  @media (max-width: 767px) {
+    .x-topbar .p-info {
+      color: #272727 !important; } }
 
 .x-promo-content {
   background: #F6FAFB; }
 
 .x-navbar {
   background: #F6FAFB; }
+  .x-navbar .desktop .x-nav > .current-menu-item > a,
+  .x-navbar .desktop .x-nav > li > a:hover {
+    color: #005e6e !important;
+    box-shadow: inset 0 4px 0 0 #005e6e !important; }
 
 .cs-content a {
   color: #005e6e; }
@@ -119,5 +127,24 @@ a:focus, select:focus, input[type="file"]:focus, input[type="radio"]:focus, inpu
 @media (max-width: 480px) {
   .banner h1 {
     font-size: 2em; } }
+
+@media (max-width: 480px) {
+  .wpcf7-recaptcha > div {
+    -webkit-transform: scale(0.77);
+    -moz-transform: scale(0.77);
+    -ms-transform: scale(0.77);
+    -o-transform: scale(0.77);
+    transform: scale(0.77);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0; } }
+
+.x-colophon.bottom {
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.15) !important; }
+
+.x-topbar .x-social-global a {
+  margin-left: 10px !important; }
 
 /*# sourceMappingURL=style.css.map */
